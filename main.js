@@ -1,4 +1,4 @@
-#Collecting Our Data:
+// Collecting Our Data:
 let display = document.querySelector('h2');
 
 let head = document.querySelector('.head')
