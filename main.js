@@ -1,3 +1,4 @@
+#Collecting Our Data:
 let display = document.querySelector('h2');
 
 let head = document.querySelector('.head')
@@ -5,6 +6,7 @@ let head = document.querySelector('.head')
 let calc = document.querySelector('.calc');
 
 let btns = document.querySelectorAll('button');
+
 let screen = document.querySelector('input');
 
 // Showing Time in Left Side :
