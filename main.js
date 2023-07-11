@@ -1,35 +1,32 @@
 // Collecting Our Data:
 let display = document.querySelector('h2');
-
 let head = document.querySelector('.head')
-
 let calc = document.querySelector('.calc');
-
 let btns = document.querySelectorAll('button');
-
 let screen = document.querySelector('input');
 
 // Showing Time in Left Side :
 document.querySelector('.time').innerHTML = new Date().toLocaleTimeString();
 
-// Controle The Navbar Display or Hide:
+// Controle The Navbar Displayplay or Hide:
 let flag = 0;
 document.querySelector('.click').onclick = function(){
   if (flag === 0){
+    head.classList.remove('hide');
     head.classList.add('show');
-    this.innerHTML = 'X'
+    this.innerHTML = 'X';
     flag = 1;
-  }
-    else{
-      head.classList.remove('show')
-      this.innerHTML = 'Click Me'
-      flag = 0;
+}
+else{
+    head.classList.add('hide');
+    this.innerHTML = 'Click Me'
+    flag = 0;
     }
 }
 // Define Main Variable:
 let num1, num2, operation;
 
-btns.forEach((btn)=>{
+btns.forEach((btn) => {
   btn.onclick = function(b){
     let e = b.target.innerHTML;
     if (parseInt(e) || e === '0'){
@@ -112,4 +109,3 @@ function getOperation(op){
 // WhatsApp: 01558656682;
 
 // EGYPT
-
